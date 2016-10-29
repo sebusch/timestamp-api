@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Timestamp API</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="./bs-callout.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Timestamp Microservice API <small>for freecodecamp</small></h1>
+    <div class="bs-callout bs-callout-info">
+      <h4>User stories</h4>
+      <ol>
+        <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)</li>
+        <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+        <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+      </ol>
+    </div>
+    <h3>Example usage:</h3>
+    <code>http://sebusch-timestamp-api.herokuapp.com/December%2015,%202015</code><br/>
+    <code>http://sebusch-timestamp-api.herokuapp.com/December 15, 2015</code><br/>
+    <code>http://sebusch-timestamp-api.herokuapp.com/1450137600</code>
+    <h3>Example ooutput:</h3>
+    <samp>{ "unix": 1450137600, "natural": "December 15, 2015" }</samp>
+  </div>
+</body>
+
+</html>
